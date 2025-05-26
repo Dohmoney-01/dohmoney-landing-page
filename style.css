@@ -48,10 +48,12 @@ nav a {
 }
 .hero h2 {
     font-size: 3rem;
+    color: white;
 }
 .hero p {
     font-size: 1.2rem;
     margin: 20px 0;
+    color: white;
 }
 .btn {
     display: inline-block;
