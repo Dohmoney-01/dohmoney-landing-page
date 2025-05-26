@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>DOHMONEY CONTRACTORS LIMITED</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+  <div class="hero-wrapper">  
+    <div class="top-banner">
+        <header>
+            <div class="container">
+                <h1>Dohmoney Contractors Limited</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="overlay">
+                <div class="container">
+                    <h2>We move mountains</h2>
+                    <p>Quality construction and building solutions for every project.</p>
+                    <a href="#contact" class="btn">Get a Quote</a>
+                </div>
+            </div>
+        </section>
+      </div>  
+        <section class="email-prompt">
+            <div class="container">
+                <h3>Stay Updated</h3>
+                <p>Enter yor email and we'll get back to you with our latest offers and services,</p>
+                <form id="email-form" action="https://formspree.io/f/mblovpye" method="POST">
+                    <input type="email" name="email"
+                    placeholder="Enter your email" required>
+                    <button type="submit"></button>
+                    <p id="form-message" style="margin-top: 10px; display: none; color: green;">Thank you! We'll be in touch.</p>
+                </form>
+                <script>
+    const form = document.getElementById('email-form');
+    const message = document.getElementById('form-message');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        }).then(response => {
+            if (response.ok) {
+                message.style.display = 'block';
+                form.reset();
+            } else {
+                alert("There was a problem. Try again.");
+            }
+        });
+    });
+</script>
+            </div>
+        </section>
+    </div>
+        <selection class="services">
+            <div class="container">
+                <h3>Our Services</h3>
+                <div class="service-list">
+                    <div class="service">
+                        <h4>Backhoe</h4>
+                        <img src="images/backhoe.jpeg" alt="Backhoe" class="service-img">
+                        <p>Backhoe available for excavation & digging,bush clearing,loading & lifting,demolition,material transport,backfilling & trenching</p>
+                    </div>
+                    <div class="service">
+                        <h4>Grader</h4>
+                        <img src="images/Grader.jpeg" alt="Grader" class="service-img">
+                        <p>Spreading material,shaping roads,maintaining gravel roads,site preperation,leveling & smoothing surfaces</p>
+                    </div>
+                    <div class="service">
+                        <h4>Roller</h4>
+                        <img src="images/Roller.jpeg" alt="Roller" class="service-img">
+                        <p>Compacting fill material,compacting roads & foundations, Surface hardening</p>
+                    </div>
+                    <div class="service">
+                        <h4>Excavator</h4>
+                        <img src="images/Excavator.jpeg" alt="Excavator/Breaker" class="service-img">
+                        <p>Excavation&digging, demolition,landscaping, mining&quarrying,site preparation,lifting&loading</p>
+                </div>
+                <div class="service">
+                    <h4>Bulldozer</h4>
+                    <img src="images/bulldozer.jpeg" alt="Bulldozer" class="service-img">
+                    <p>Bush clearing,backfilling,road construction,pushing material,grading&leveling</p>
+                </div>
+                <div class="srvice">
+                    <h4>Shovel</h4>
+                    <img src="images/Shovel.webp" alt="Shovel" class="service-img">
+                    <p>Digging&loading,bush clearing,loading,backfilling,levelling</p>
+                </div>
+                <div class="service">
+                    <h4>concrete pump truck</h4>
+                    <img src="images/Concrete pump.jpg" alt="concrete pump truck" class="service-img">
+                    <p>Improving speed of construction,accessing difficult locations,enhancing safety,ensuring consistent flow,reducing labor</p>
+                </div>
+                <div class="service">
+                    <h4>Concrete mixer truck</h4>
+                    <img src="images/concrete mixer.webp" alt="Concrete mixer truck" class="service-img">
+                    <p>Transporting concrete,mixing during transit,maintaining concrete qualiyy,time efficiency,discharging concrete</p>
+                </div>
+                <div class="service">
+                    <h4>Tipper Truck</h4><img src="images/Tipper.jpeg" alt="Tipper Truck/Ndae" class="service-img">
+                    <p>Transporting construction material,easy unloading,move materials between sites,speeding up excavation,reducing manual labor</p>
+                </div>
+                <div class="service">
+                    <h4>Crane</h4>
+                    <img src="images/Crane.jpeg" alt="Crane" class="service-img">
+                    <p>Material handling, assembly&installation,lifting heavy loads,construction support,loading&unloading</p>
+                </div>
+                <div class="service">
+                    <h4>Low Loader</h4><img src="images/lowloader.jpeg" alt="Low Loader" class="service-img">
+                    <p>Transporting oversized cargo,loading& securing the load,transporting heavy machinery,compliance</p>
+                  <div class="service">
+                    <h4>Breaker</h4>
+                    <img src="images/Breaker.jpeg" alt="Breaker/Bucket" class="service-img">
+                    <p>Demolition,excavating hard surfaces,quarrying&mining,road construction,trenching&digging,site preparation</p>
+                  </div>  
+                </div>
+            </div>
+        </selection>
+        <section class="contact-section" id="contact">
+  <div class="container">
+    <h3>Contact Us</h3>
+    <p>Have a question or a project in mind? We'd love to hear from you.</p>
+
+    <form id="contact-form" action="https://formspree.io/f/mblovpye" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="form-response" style="display:none; color: green;">Thank you! We'll be in touch.</p>
+    </form>
+  </div>
+</section>
+
+        <footer>                
+            <div class="container">
+                <p>&copy; 2025 Dohmoney Contractors Limited. All rights reserved.</p>
+            </div>
+        </footer>
+    <script>
+  const contactForm = document.getElementById('contact-form');
+  const responseMessage = document.getElementById('form-response');
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { Accept: 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        responseMessage.style.display = 'block';
+        contactForm.reset();
+      } else {
+        alert("There was a problem submitting the form. Please try again.");
+      }
+    });
+  });
+</script>    
+    </body>
+</html>
