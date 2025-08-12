@@ -30,7 +30,7 @@ nav a {
     font-weight: bold;
 }
 .hero {
-    background: url("images/quote-bg.jpg");
+    background: url("images/nquote-bg.jpg");
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -184,4 +184,5 @@ footer {
 .contact-section button:hover {
   background-color: #0056b3;
 }
+
 
