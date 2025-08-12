@@ -42,7 +42,7 @@ nav a {
     padding: 20px;
 }
 .hero-wrapper {
-    background: url("images/quote-bg.jpg");
+    background: url("images/backhoe.jpeg");
     background-size: cover;
     color: white;
 }
@@ -184,3 +184,4 @@ footer {
 .contact-section button:hover {
   background-color: #0056b3;
 }
+
